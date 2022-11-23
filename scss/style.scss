@@ -1,0 +1,71 @@
+body {
+    padding: 50px 0 50px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // .form__input
+
+    &__input {
+        width: 250px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border-color: blueviolet;
+    }
+
+    button {
+        margin-top: 10px;
+        border-radius: 5px;
+        border-color: blueviolet;
+    }
+}
+
+.title {
+}
+.film {
+
+    // .film__list
+    &__list {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        border: 1px solid red;
+
+    }
+
+    // .film__list-item
+
+    &__list-item {
+        position: relative;
+        display: block;
+        padding: 0 20px;
+        width: 200px;
+        border: 1px solid black;
+        &:hover {
+            .delete {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background: url('../img/trash.png') center (center / cover) no-repeat;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+
